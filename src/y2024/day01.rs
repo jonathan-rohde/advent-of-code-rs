@@ -1,7 +1,10 @@
 use crate::util::read_file;
 
 pub fn solve() -> (String, String) {
-    (solve_part1(), solve_part2())
+    let (part1, part2) = (solve_part1(), solve_part2());
+    assert_eq!(part1, "1938424".to_string());
+    assert_eq!(part2, "22014209".to_string());
+    (part1, part2)
 }
 
 fn solve_part1() -> String {
