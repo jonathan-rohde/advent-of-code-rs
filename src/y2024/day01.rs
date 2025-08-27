@@ -1,7 +1,7 @@
 use crate::util::read_file;
 
-pub fn solve() -> String {
-    format!("{}\n{}", solve_part1(), solve_part2())
+pub fn solve() -> (String, String) {
+    (solve_part1(), solve_part2())
 }
 
 fn solve_part1() -> String {
