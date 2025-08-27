@@ -61,15 +61,13 @@ fn is_sorted(data: &Vec<i32>) -> bool {
     let mut all_desc = true;
     for i in 0..data.len() - 1 {
         if !(1..=3).contains(&(data[i] - data[i + 1]).abs()) {
-            all_desc = false;
-            all_asc = false;
+            return false;
         } else if data[i] < data[i + 1] {
             all_desc = false;
         } else if data[i] > data[i + 1] {
             all_asc = false;
         } else {
-            all_desc = false;
-            all_asc = false;
+            return false;
         }
     }
 
