@@ -9,7 +9,8 @@ struct ExecutionResult {
 fn main() {
     // print_result(1, || y2024::day01::solve());
     // print_result(2, || y2024::day02::solve());
-    print_result(3, || y2024::day03::solve());
+    // print_result(3, || y2024::day03::solve());
+    print_result(3, || y2024::day04::solve());
 }
 
 fn format(value: (String, String)) -> String {
